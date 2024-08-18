@@ -45,10 +45,5 @@ kickMaxLevel()
 
 isMaxLevel(player)
 {
-    if(self.pers["prestige"] == 10 && self.pers["rank"] == 1000)
-    {
-        return true;
-    }
-    else
-        return false;
+    return (self.pers["prestige"] == 10 && self.pers["rank"] == 1000);
 }
